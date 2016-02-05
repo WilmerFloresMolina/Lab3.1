@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 	cout << "2. Ejercicio 2 "<<endl;
 	cout << "3. Salir "<<endl;
 	cin >> Ejercicio;
-         int persona =0;
+        int persona =0;
           if (Ejercicio == 1){
             llenar (Tabla);
             
@@ -96,14 +96,58 @@ int main(int argc, char *argv[]){
                 }
 	  	  
            }// fin del while 
-	  }// fin del if del ejercicio 1
+	  }// fin del if del ejercic+io 1
+          if(Ejercicio ==2){
+	    cout <<"-----------Juego------------" <<endl;
+           double magic=(rand()%115)+85;
+	   int matriz [4][3];
+	    for (int i =0 ; i < 4; i++){
+ 	        for (int j=0 ; j <3 ;j++){
+		
+		  if(j==0){
+                   matriz[i][j]=(rand()%30)+85;
+		   }//fin del if
+                   if(j==1){
+                   matriz[i][j]=(rand()%25)+50;
+		   }//fin del if
+		  if(j==2){
+                  matriz[i][j]=(rand()%50)+150;
+		   }//fin del if
+                } // fin for j
+            }// fin for i de la matiz
+            cout<< "---------------------------"<<endl;
+	    for (int i =0 ; i < 4; i++){
+ 	        for (int j=0 ; j <3 ;j++){
+                cout<< matriz[i][j]<<", ";
+                }
+              cout << ""<<endl;
+            } 
+          double vida = 0;
+          double ataque = 0;
+          int player=1;
+	  while (player==1||player==2){
+          
+            if (player ==1){
+              for (int i=0 ; i <4 ;i++){
+                  for(int j=0 ;j<3;j++){
+                  
+                  }
+	      }
+             
+            
+            player=3;
+            }
+          }
+          
+          }// fin for del ejercicio2
+        
+          
         
 	}while(Ejercicio <=2);// fin del do while
         cout << "------------------------"<< endl;
 
 
        ordenar(Tabla, 10);
-
        cout << "-------------------"<< endl;
 	for (int i= 0 ;i <10;i++){
          cout <<Tabla[i]<<endl;
